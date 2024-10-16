@@ -1,22 +1,9 @@
+import { Button } from '@/components/ui/button'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Plus } from 'lucide-react'
 import React from 'react'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
-import { Home, Package, Users, ShoppingCart, FileText, PieChart, DollarSign, Settings, ChevronDown, Plus } from 'lucide-react'
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import SideBar from '@/components/SideBar'
-
-const chartData = [
-  { name: 'Jan', income: 4000, expenses: 2400 },
-  { name: 'Feb', income: 3000, expenses: 1398 },
-  { name: 'Mar', income: 2000, expenses: 9800 },
-  { name: 'Apr', income: 2780, expenses: 3908 },
-  { name: 'May', income: 1890, expenses: 4800 },
-  { name: 'Jun', income: 2390, expenses: 3800 },
-]
-
-export default function Dashboard() {
+const Dashboard = () => {
   return (
     <>
       <header className="flex justify-between items-center mb-8">
@@ -123,3 +110,5 @@ export default function Dashboard() {
     </>
   )
 }
+
+export default Dashboard
